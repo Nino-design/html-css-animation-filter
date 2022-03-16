@@ -196,9 +196,15 @@
 /*soluzione esercizio 12*/
 
 .ex-12-button:hover .ex-12-bottom-white {
-    animation: movewhitespace 2s linear;
+    animation: movewhitespacebottom 2s linear;
 }
-@keyframes movewhitespace {
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: movewhitespacetop 2s linear;
+}
+
+
+@keyframes movewhitespacebottom {
     0% {
         right: 20%;
     }
@@ -209,6 +215,19 @@
         right: 20%;
     }
 }
+
+@keyframes movewhitespacetop {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
 
 /*soluzione esercizio 13*/
 
